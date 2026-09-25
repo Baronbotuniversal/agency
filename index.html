@@ -333,28 +333,37 @@ section{padding:70px 0}
 
 <form action="https://formspree.io/f/xjykolre" method="POST">
 
-  <input type="text" name="Name"
-         placeholder="Ihr Name" required>
+  <input
+    type="text"
+    name="name"
+    placeholder="Ihr Name"
+    required
+  >
 
-  <input type="text" name="Unternehmen"
-         placeholder="Immobilienunternehmen">
+  <input
+    type="text"
+    name="company"
+    placeholder="Immobilienunternehmen"
+  >
 
-  <input type="email" name="E-Mail"
-         placeholder="Ihre E-Mail-Adresse" required>
+  <input
+    type="email"
+    name="email"
+    placeholder="Ihre E-Mail-Adresse"
+    required
+  >
 
-  <select name="Gewünschtes Paket" required>
+  <select name="package">
     <option value="">Gewünschtes Paket</option>
     <option>Starter – 149 €/Monat</option>
     <option>Business – 299 €/Monat</option>
     <option>Premium – 499 €/Monat</option>
   </select>
 
-  <textarea name="Nachricht"
-            placeholder="Was soll Ihr KI-Assistent können?"
-            rows="5" required></textarea>
-
-  <input type="hidden" name="_subject"
-         value="Neue Anfrage über Baronbotuniversal">
+  <textarea
+    name="message"
+    placeholder="Was soll Ihr KI-Assistent können?"
+  ></textarea>
 
   <button class="btn primary" type="submit">
     Anfrage senden
