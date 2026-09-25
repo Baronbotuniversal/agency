@@ -331,26 +331,36 @@ section{padding:70px 0}
       </a>
     </div>
 
-    <form onsubmit="sendMessage(event)">
-      <input id="name" type="text" placeholder="Ihr Name" required>
-      <input id="company" type="text" placeholder="Immobilienunternehmen">
-      <input id="email" type="email" placeholder="Ihre E-Mail-Adresse" required>
+<form action="https://formspree.io/f/xjykolre" method="POST">
 
-      <select id="package">
-        <option value="">Gewünschtes Paket</option>
-        <option>Starter – 149 €/Monat</option>
-        <option>Business – 299 €/Monat</option>
-        <option>Premium – 499 €/Monat</option>
-      </select>
+  <input type="text" name="Name"
+         placeholder="Ihr Name" required>
 
-      <textarea id="message" placeholder="Was soll Ihr KI-Assistent können?"></textarea>
+  <input type="text" name="Unternehmen"
+         placeholder="Immobilienunternehmen">
 
-      <button class="btn primary" type="submit">Anfrage senden</button>
+  <input type="email" name="E-Mail"
+         placeholder="Ihre E-Mail-Adresse" required>
 
-      <div class="notice">
-        Beim Absenden öffnet sich Ihr E-Mail-Programm mit einer vorbereiteten Nachricht.
-      </div>
-    </form>
+  <select name="Gewünschtes Paket" required>
+    <option value="">Gewünschtes Paket</option>
+    <option>Starter – 149 €/Monat</option>
+    <option>Business – 299 €/Monat</option>
+    <option>Premium – 499 €/Monat</option>
+  </select>
+
+  <textarea name="Nachricht"
+            placeholder="Was soll Ihr KI-Assistent können?"
+            rows="5" required></textarea>
+
+  <input type="hidden" name="_subject"
+         value="Neue Anfrage über Baronbotuniversal">
+
+  <button class="btn primary" type="submit">
+    Anfrage senden
+  </button>
+
+</form>
 
   </div>
 </section>
